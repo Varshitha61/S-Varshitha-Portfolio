@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0a0a"/>
+      <stop offset="100%" style="stop-color:#1a1a1a"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#de3e53"/>
+      <stop offset="50%" style="stop-color:#dfad27"/>
+      <stop offset="100%" style="stop-color:#2e7d32"/>
+    </linearGradient>
+    <linearGradient id="text" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fdfbf7"/>
+      <stop offset="100%" style="stop-color:#e8e4dc"/>
+    </linearGradient>
+  </defs>
+  <!-- Background circle -->
+  <circle cx="32" cy="32" r="30" fill="url(#bg)" stroke="url(#accent)" stroke-width="2.5"/>
+  <!-- Inner decorative ring -->
+  <circle cx="32" cy="32" r="26" fill="none" stroke="url(#accent)" stroke-width="0.5" opacity="0.4"/>
+  <!-- VS monogram -->
+  <text x="32" y="40" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="28" font-weight="700" font-style="italic" fill="url(#text)" letter-spacing="-1">VS</text>
+  <!-- Small diamond accent -->
+  <polygon points="32,8 34,10 32,12 30,10" fill="url(#accent)" opacity="0.8"/>
+  <!-- Bottom accent dot -->
+  <circle cx="32" cy="54" r="1.5" fill="url(#accent)" opacity="0.6"/>
+</svg>
