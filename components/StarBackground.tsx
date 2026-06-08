@@ -37,7 +37,7 @@ const AtmosphericBackground: React.FC = () => {
       <div 
         className="absolute inset-0 opacity-[0.03]" 
         style={{ 
-          backgroundImage: 'radial-gradient(circle, #f687b3 1px, transparent 1px)',
+          backgroundImage: 'radial-gradient(circle, #de3e53 1px, transparent 1px)',
           backgroundSize: '40px 40px' 
         }} 
       />
@@ -68,7 +68,7 @@ const AtmosphericBackground: React.FC = () => {
         style={{
           background: useTransform(
             [smoothMouseX, smoothMouseY],
-            ([x, y]) => `radial-gradient(600px circle at ${x}px ${y}px, rgba(16, 185, 129, 0.08), transparent 70%)`
+            ([x, y]) => `radial-gradient(600px circle at ${x}px ${y}px, rgba(223, 173, 39, 0.08), transparent 70%)`
           )
         }}
       />
