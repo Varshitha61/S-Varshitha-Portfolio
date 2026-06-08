@@ -17,11 +17,18 @@ const Footer: React.FC = () => {
 
     setStatus('submitting');
 
+    if (!supabase) {
+      console.error('Supabase client is not initialized. Please configure VITE_SUPABASE_URL and VITE_SUPABASE_ANON_KEY environment variables.');
+      setStatus('error');
+      return;
+    }
+
     // Check if variables are possibly empty strings (e.g. initial setup)
     // to avoid misleading errors, though functionality depends on valid envs.
     const { error } = await supabase
       .from('messages')
       .insert([formData]);
+
 
     if (error) {
       console.error('Error submitting form:', error);
