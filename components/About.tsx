@@ -140,7 +140,7 @@ const About: React.FC = () => {
               </div>
 
               <motion.a
-                href="https://drive.google.com/file/d/1gm7C-zZeBHto60W5znaXNZf8MEheUXKW/view?usp=drive_link"
+                href="https://drive.google.com/file/d/1ZdMATG_XCsTwjMdH3V_XSfa1LkVxmKZP/view?usp=drivesdk"
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.05, x: 5 }}
