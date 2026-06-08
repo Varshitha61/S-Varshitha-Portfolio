@@ -154,7 +154,8 @@ const Hero: React.FC = () => {
               <img
                 src={profileImg}
                 alt="Varshitha Portrait"
-                className="w-full h-full object-cover object-top transition-transform duration-[1.5s] ease-[0.19,1,0.22,1] group-hover:scale-110 group-hover:rotate-3"
+                className="w-full h-full object-cover transition-transform duration-[1.5s] ease-[0.19,1,0.22,1] group-hover:scale-[2] group-hover:rotate-3"
+                style={{ objectPosition: 'center 15%', transform: 'scale(1.8)' }}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 hover:opacity-100 transition-opacity duration-500" />
             </motion.div>
